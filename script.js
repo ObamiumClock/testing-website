@@ -1,3 +1,5 @@
+console.log("Script loaded!");
+
 const txt = document.getElementById("text")
 const input = document.getElementById("input")
 const title = document.getElementById("title")
