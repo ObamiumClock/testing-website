@@ -11,13 +11,21 @@ const swears = ["fuck","bitch","retard","asshole","nigg","ass","shit","rape","fa
 let swearList = swears.length-1
 
 function updateTxt() {
-  for (let i = 0;input.value.includes(swears[i]) === false && i <= swearList;i++) {
+  let containsSwear = false;
+  
+  // Check if input contains any swear word
+  for (let i = 0; i < swears.length; i++) {
+    if (input.value.includes(swears[i])) {
+      containsSwear = true;
+      break; // Stop checking once we find one
+    }
+  }
+  
+  if (containsSwear) {
+    txt.innerHTML = "You cannot write swear words";
+  } else {
     txt.innerHTML = "You said: " + "'" + input.value + "'";
     console.log("msg submitted");
-    if (txt.innerHTML.includes(input.value)) {
-      console.log("msg success");
-    }
-  } else {
-    txt.innerHTML = "You cannot write swear words"
+    console.log("msg success");
   }
 }
