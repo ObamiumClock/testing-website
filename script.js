@@ -8,9 +8,9 @@ title.style.color = "white"
 
 
 function updateTxt() {
-  txt.innerHTML = "You said: "+input.value 
-  console.log("msg submitted")
+  txt.innerHTML = "You said: " + input.value;
+  console.log("msg submitted");
   if (txt.innerHTML.includes(input.value)) {
-    console.log("msg success")
+    console.log("msg success");
   }
 }
