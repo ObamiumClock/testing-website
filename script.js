@@ -7,7 +7,7 @@ txt.style.color = "white"
 title.style.color = "white"
 
 
-function onclick() {
+function updateTxt() {
   txt.innerHTML = "You said: "+input.value 
   console.log("msg submitted")
   if (txt.innerHTML.includes(input.value)) {
