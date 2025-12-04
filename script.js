@@ -2,7 +2,7 @@ const txt = document.getElementById("text")
 const input = document.getElementById("input")
 const bg = document.body.style
 bg.backgroundColor = "black"
-txt.color = "white"
+txt.style.color = "white"
 
 
 function onclick() {
